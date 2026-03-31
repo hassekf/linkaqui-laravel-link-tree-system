@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+
+@source '../views';
+
+@theme {
+    --color-landing-bg: #0a0a0f;
+    --color-landing-text: #ffffff;
+    --color-landing-text-muted: #9ca3af;
+    --color-landing-accent: #7c5cfc;
+    --color-landing-accent-hover: #6b4feb;
+    --color-landing-card-bg: rgba(255, 255, 255, 0.05);
+    --color-landing-card-border: rgba(255, 255, 255, 0.1);
+    --font-family-landing: 'Inter', system-ui, sans-serif;
+
+    --animate-float-orb: float-orb 20s ease-in-out infinite;
+    --animate-grain: grain 8s steps(10) infinite;
+    --animate-hero-glow: hero-glow 3s ease-in-out infinite;
+}
+
+@keyframes float-orb {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    25% {
+        transform: translateY(-30px) scale(1.05);
+    }
+    50% {
+        transform: translateY(10px) scale(0.95);
+    }
+    75% {
+        transform: translateY(-15px) scale(1.02);
+    }
+}
+
+@keyframes grain {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(-5%, -10%);
+    }
+    20% {
+        transform: translate(-15%, 5%);
+    }
+    30% {
+        transform: translate(7%, -25%);
+    }
+    40% {
+        transform: translate(-5%, 25%);
+    }
+    50% {
+        transform: translate(-15%, 10%);
+    }
+    60% {
+        transform: translate(15%, 0%);
+    }
+    70% {
+        transform: translate(0%, 15%);
+    }
+    80% {
+        transform: translate(3%, 35%);
+    }
+    90% {
+        transform: translate(-10%, 10%);
+    }
+}
+
+@keyframes hero-glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(124, 92, 252, 0.3), 0 0 60px rgba(124, 92, 252, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(124, 92, 252, 0.5), 0 0 80px rgba(124, 92, 252, 0.2);
+    }
+}

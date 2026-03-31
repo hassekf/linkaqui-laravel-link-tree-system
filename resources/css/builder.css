@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+@source '../views';
+
+@theme {
+    --color-builder-bg: #0f0f15;
+    --color-builder-surface: #1a1a24;
+    --color-builder-surface-hover: #22222e;
+    --color-builder-surface-active: #2a2a38;
+    --color-builder-border: #2a2a3a;
+    --color-builder-border-focus: #7c5cfc;
+    --color-builder-primary: #7c5cfc;
+    --color-builder-primary-hover: #6b4feb;
+    --color-builder-primary-text: #ffffff;
+    --color-builder-text: #e5e5e5;
+    --color-builder-text-muted: #9ca3af;
+    --color-builder-text-dim: #6b7280;
+    --color-builder-success: #22c55e;
+    --color-builder-danger: #ef4444;
+    --color-builder-danger-hover: #dc2626;
+    --color-builder-warning: #f59e0b;
+    --font-family-builder: 'Inter', system-ui, sans-serif;
+}
+
+/* Custom scrollbar */
+.overflow-y-auto {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-builder-border) transparent;
+}
+
+.overflow-y-auto::-webkit-scrollbar {
+    width: 6px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+    background: var(--color-builder-border);
+    border-radius: 3px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+    background: var(--color-builder-surface-active);
+}

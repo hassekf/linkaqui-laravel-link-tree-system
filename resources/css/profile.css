@@ -1,0 +1,98 @@
+@import 'tailwindcss';
+
+@source '../views';
+
+@theme {
+    --color-profile-bg: #0a0a0f;
+    --color-profile-text: #ffffff;
+    --color-profile-text-muted: #9ca3af;
+    --color-profile-card-bg: rgba(255, 255, 255, 0.05);
+    --color-profile-card-border: rgba(255, 255, 255, 0.1);
+    --color-profile-accent: #7c5cfc;
+    --font-family-profile: 'Inter', system-ui, sans-serif;
+
+    --animate-float-orb: float-orb 20s ease-in-out infinite;
+    --animate-avatar-ring: avatar-ring 4s linear infinite;
+    --animate-pulse-status: pulse-status 2s ease-in-out infinite;
+    --animate-stagger-in: stagger-in 0.5s ease-out both;
+    --animate-grain: grain 8s steps(10) infinite;
+}
+
+@keyframes float-orb {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    25% {
+        transform: translateY(-30px) scale(1.05);
+    }
+    50% {
+        transform: translateY(10px) scale(0.95);
+    }
+    75% {
+        transform: translateY(-15px) scale(1.02);
+    }
+}
+
+@keyframes avatar-ring {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse-status {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.4);
+        opacity: 0.5;
+    }
+}
+
+@keyframes stagger-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes grain {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(-5%, -10%);
+    }
+    20% {
+        transform: translate(-15%, 5%);
+    }
+    30% {
+        transform: translate(7%, -25%);
+    }
+    40% {
+        transform: translate(-5%, 25%);
+    }
+    50% {
+        transform: translate(-15%, 10%);
+    }
+    60% {
+        transform: translate(15%, 0%);
+    }
+    70% {
+        transform: translate(0%, 15%);
+    }
+    80% {
+        transform: translate(3%, 35%);
+    }
+    90% {
+        transform: translate(-10%, 10%);
+    }
+}

@@ -43,8 +43,8 @@ test('security settings page renders without two factor when feature is disabled
         ->withSession(['auth.password_confirmed_at' => time()])
         ->get(route('security.edit'))
         ->assertOk()
-        ->assertSee('Update password')
-        ->assertDontSee('Two-factor authentication');
+        ->assertSee(__('Update password'))
+        ->assertDontSee(__('Two-factor authentication'));
 });
 
 test('two factor authentication disabled when confirmation abandoned between requests', function () {

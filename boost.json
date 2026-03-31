@@ -1,16 +1,25 @@
 {
     "agents": [
         "claude_code",
-        "opencode"
+        "opencode",
+        "codex",
+        "copilot"
     ],
     "guidelines": true,
     "mcp": true,
     "nightwatch_mcp": false,
+    "packages": [
+        "livewire/blaze",
+        "laravel/fortify"
+    ],
     "sail": false,
     "skills": [
         "laravel-best-practices",
         "fluxui-development",
         "livewire-development",
-        "pest-testing"
+        "pest-testing",
+        "tailwindcss-development",
+        "fortify-development",
+        "blaze-optimize"
     ]
 }

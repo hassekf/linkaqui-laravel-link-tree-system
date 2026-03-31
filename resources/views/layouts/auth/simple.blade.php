@@ -3,14 +3,19 @@
     <head>
         @include('partials.head')
     </head>
-    <body class="min-h-screen bg-white antialiased dark:bg-linear-to-b dark:from-neutral-950 dark:to-neutral-900">
-        <div class="bg-background flex min-h-svh flex-col items-center justify-center gap-6 p-6 md:p-10">
+    <body class="min-h-screen antialiased" style="background-color: #0a0a0f; color: #ffffff; font-family: 'Inter', system-ui, sans-serif;">
+        {{-- Static gradient background --}}
+        <div class="fixed inset-0 pointer-events-none" aria-hidden="true"
+             style="background: radial-gradient(ellipse 80% 60% at 20% 10%, rgba(124,92,252,0.12), transparent),
+                                radial-gradient(ellipse 60% 50% at 80% 50%, rgba(59,130,246,0.08), transparent),
+                                radial-gradient(ellipse 70% 60% at 40% 90%, rgba(168,85,247,0.08), transparent);"></div>
+
+        <div class="relative z-10 flex min-h-svh flex-col items-center justify-center gap-6 p-6 md:p-10">
             <div class="flex w-full max-w-sm flex-col gap-2">
                 <a href="{{ route('home') }}" class="flex flex-col items-center gap-2 font-medium" wire:navigate>
-                    <span class="flex h-9 w-9 mb-1 items-center justify-center rounded-md">
-                        <x-app-logo-icon class="size-9 fill-current text-black dark:text-white" />
+                    <span class="text-2xl font-bold tracking-tight">
+                        Link<span style="color: #7c5cfc;">Aqui</span>
                     </span>
-                    <span class="sr-only">{{ config('app.name', 'Laravel') }}</span>
                 </a>
                 <div class="flex flex-col gap-6">
                     {{ $slot }}
