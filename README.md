@@ -4,6 +4,32 @@
 
 Sua pagina de links, do seu jeito. Uma alternativa open source ao Linktree, construida com Laravel, Livewire e Tailwind CSS.
 
+<p align="center">
+  <img src="screenshots/profile-mobile.png" alt="Perfil publico" width="280" />
+</p>
+
+## Screenshots
+
+<details>
+<summary>Ver todas as telas</summary>
+
+### Landing Page
+![Landing Page](screenshots/landing.png)
+
+### Page Builder
+![Page Builder](screenshots/builder.png)
+
+### Analytics
+![Analytics](screenshots/analytics.png)
+
+### Produtos
+![Produtos](screenshots/products.png)
+
+### Perfil Publico (Desktop)
+![Perfil Desktop](screenshots/profile-desktop.png)
+
+</details>
+
 ## Funcionalidades
 
 ### Para o usuario
